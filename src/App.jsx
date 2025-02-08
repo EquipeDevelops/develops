@@ -1,7 +1,10 @@
+import NavMenu from "./components/NavMenu";
+import HeroSection from "./components/HeroSection";
 function App() {
   return (
     <div>
-      <h1>Teste</h1>
+      <NavMenu />
+      <HeroSection />
     </div>
   );
 }

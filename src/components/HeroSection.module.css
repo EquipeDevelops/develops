@@ -1,0 +1,71 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 100px 0;
+  color: white;
+}
+
+.heroContent {
+  max-width: 600px;
+  margin-left: 220px;
+  margin-top: 50px;
+}
+
+.lower {
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 40px;
+}
+.upper {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.highlight {
+  color: #2bb673;
+  margin-left: 15px;
+}
+
+.ctaButtons {
+  margin-top: 30px;
+}
+
+.buttonCTA {
+  margin-top: 20px;
+  background-color: #2bb673;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttonCTA:hover {
+  background-color: #19623f;
+}
+
+.btn {
+  background-color: rgba(0, 128, 0, 0);
+  color: greenyellow;
+  border: 1px solid greenyellow;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.contactInfo {
+  margin-top: 34px;
+}
+
+.heroImg img {
+  max-height: 300px;
+  object-fit: contain;
+  margin-right: 45px;
+  margin-top: 50px;
+}
