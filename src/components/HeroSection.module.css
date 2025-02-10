@@ -2,70 +2,76 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 150px 100px 0;
+  padding: 2rem;
   color: white;
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px;
 }
 
 .heroContent {
-  max-width: 600px;
-  margin-left: 220px;
-  margin-top: 50px;
+  max-width: 50%;
+  margin-left: 400px;
 }
 
+.upper,
 .lower {
-  font-weight: 300;
-  line-height: 1.2;
-  font-size: 40px;
-}
-.upper {
-  font-size: 48px;
-  line-height: 1.2;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: white;
 }
 
 .highlight {
-  color: #2bb673;
-  margin-left: 15px;
+  color: greenyellow;
+}
+
+.lower {
+  margin-top: 1rem;
 }
 
 .ctaButtons {
-  margin-top: 30px;
+  margin-top: 2rem;
 }
 
-.buttonCTA {
-  margin-top: 20px;
-  background-color: #2bb673;
-  color: #000;
+.buttonCTA,
+.btn {
+  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  margin-right: 10px;
+  border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.buttonCTA {
+  background-color: greenyellow;
+  color: #333;
+  border: none;
+}
+
 .buttonCTA:hover {
-  background-color: #19623f;
+  background-color: #b3ff00;
 }
 
 .btn {
-  background-color: rgba(0, 128, 0, 0);
+  background-color: transparent;
+  border: 2px solid greenyellow;
   color: greenyellow;
-  border: 1px solid greenyellow;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  margin-right: 10px;
-  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: greenyellow;
+  color: #333;
 }
 
 .contactInfo {
-  margin-top: 34px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: white;
 }
 
 .heroImg img {
-  max-height: 300px;
-  object-fit: contain;
-  margin-right: 45px;
-  margin-top: 50px;
+  max-width: 100%;
+  height: auto;
+  margin-right: 200px;
 }

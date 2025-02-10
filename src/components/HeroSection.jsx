@@ -25,7 +25,7 @@ function HeroSection() {
         </p>
       </div>
       <div className={styles.heroImg}>
-        <img src={logo}></img>
+        <img src={logo} alt="Logo" />
       </div>
     </section>
   );
