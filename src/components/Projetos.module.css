@@ -1,0 +1,41 @@
+.projetos {
+  margin-top: 120px;
+}
+
+.projetos h1 {
+  color: white;
+  text-align: center;
+}
+
+.projetos p {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.projetocard {
+  margin-top: 200px;
+}
+
+.projetocard h1 {
+  color: #2bb673;
+  display: flex;
+  position: relative;
+  margin-left: 400px;
+}
+
+.projetocard p {
+  display: flex;
+  position: relative;
+  margin-top: 25px;
+  margin-left: 400px;
+  font-size: 1.3rem;
+}
+
+.projetocard img {
+  width: 480px;
+  height: 260px;
+  position: absolute;
+  right: 500px;
+  top: 1520px;
+}
