@@ -1,6 +1,7 @@
 import NavMenu from "./components/NavMenu";
 import HeroSection from "./components/HeroSection";
 import Serviços from "./components/Serviços";
+import Projetos from "./components/Projetos";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavMenu />
       <HeroSection />
       <Serviços />
+      <Projetos />
     </div>
   );
 }
