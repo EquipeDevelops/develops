@@ -7,16 +7,25 @@
   position: relative;
   overflow: hidden;
   margin-top: 100px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 2rem;
 }
 
 .heroContent {
-  max-width: 50%;
-  margin-left: 400px;
+  flex: 1;
+  max-width: 600px;
 }
 
-.upper,
+.upper {
+  font-size: 3.4rem;
+  font-weight: lighter;
+  color: white;
+}
+
 .lower {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   font-weight: lighter;
   color: white;
 }
@@ -70,8 +79,28 @@
   color: white;
 }
 
+.heroImg {
+  flex-shrink: 0;
+}
+
 .heroImg img {
   max-width: 100%;
   height: auto;
-  margin-right: 200px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroContent {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .heroImg {
+    margin-top: 1.5rem;
+  }
 }

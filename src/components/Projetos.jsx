@@ -11,9 +11,13 @@ function Projetos() {
       </p>
 
       <div className={styles.projetocard}>
-        <h1>Portfólio de advocacia</h1>
-        <p> Um portifólio que desenvolvemos para um escritório de advocacia</p>
-        <img src={cris} />
+        <div className={styles.textSection}>
+          <h2>Portfólio de advocacia</h2>
+          <p>Um portfólio que desenvolvemos para um escritório de advocacia</p>
+        </div>
+        <div className={styles.imageSection}>
+          <img src={cris} alt="Foto do portfólio de advocacia" />
+        </div>
       </div>
     </main>
   );

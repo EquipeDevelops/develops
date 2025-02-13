@@ -11,3 +11,14 @@ body {
   background-color: #292929;
   margin: auto;
 }
+
+.sobre {
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+}
+.contato {
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+}
