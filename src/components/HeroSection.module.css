@@ -6,11 +6,25 @@
   color: white;
   position: relative;
   overflow: hidden;
-  margin-top: 100px;
+  margin-top: 200px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   gap: 2rem;
+}
+
+.rounded {
+  position: absolute;
+  width: 500px;
+  height: 80px;
+  right: 0;
+  margin-bottom: 210px;
+  margin-right: 900px;
+  background-image: url("../imgs/rounded.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
 }
 
 .heroContent {
@@ -20,7 +34,7 @@
 
 .upper {
   font-size: 3.4rem;
-  font-weight: lighter;
+  font-weight: 400;
   color: white;
 }
 
@@ -31,7 +45,7 @@
 }
 
 .highlight {
-  color: greenyellow;
+  color: #2bb673;
 }
 
 .lower {
@@ -53,7 +67,7 @@
 }
 
 .buttonCTA {
-  background-color: greenyellow;
+  background-color: #2bb673;
   color: #333;
   border: none;
 }
@@ -64,8 +78,8 @@
 
 .btn {
   background-color: transparent;
-  border: 2px solid greenyellow;
-  color: greenyellow;
+  border: 2px solid #2bb673;
+  color: #2bb673;
 }
 
 .btn:hover {
@@ -84,8 +98,11 @@
 }
 
 .heroImg img {
-  max-width: 100%;
+  max-width: 30%;
   height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   object-fit: contain;
 }
 

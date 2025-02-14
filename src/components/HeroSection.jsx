@@ -4,9 +4,10 @@ import logo from "../imgs/logo.png";
 function HeroSection() {
   return (
     <section className={styles.hero}>
+      <div className={styles.rounded}></div>
       <div className={styles.heroContent}>
         <h1 className={styles.upper}>
-          SOMOS <span className={styles.highlight}>DEVELOPS</span>{" "}
+          SOMOS <span className={styles.highlight}>DEVELOPS</span>
         </h1>
         <br />
 

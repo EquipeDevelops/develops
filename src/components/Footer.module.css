@@ -1,0 +1,112 @@
+/* Footer.module.css */
+
+/* Wrapper geral para envolver o footer e o componente de contato */
+.footerWrapper {
+  position: relative;
+  background-color: #1e1e1e;
+  padding: 2rem 0;
+  color: #fff;
+}
+
+/* Caixa de contato verde, que se projeta para cima do footer */
+.contactBox {
+  background-color: #29c76f;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 800px;
+  position: absolute;
+  top: -50px; /* Faz o componente se projetar acima do footer */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Garante que ele apareça por cima do footer */
+}
+
+.contactText {
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+.contactButton {
+  padding: 0.5rem 1.5rem;
+  background-color: #fff;
+  color: #29c76f;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer principal */
+.footer {
+  background-color: #1e1e1e;
+  padding-top: 5rem; /* Compensa o espaço do contactBox */
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Coluna esquerda */
+.leftContent {
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.logo {
+  color: #29c76f;
+}
+
+.tagline {
+  margin-top: 0.5rem;
+}
+
+/* Coluna direita - Social */
+.socialContent {
+  text-align: right;
+}
+
+.socialTitle {
+  margin-bottom: 0.5rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.socialIcons a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+.developsLink {
+  color: #29c76f;
+  text-decoration: none;
+}
+
+.developsLink:hover {
+  text-decoration: underline;
+}
+.icons a {
+  margin-right: 1rem;
+}
+
+.icons img {
+  width: 32px;
+  height: 32px;
+}

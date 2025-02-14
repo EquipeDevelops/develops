@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styles from "./Serviços.module.css";
+import lefty from "../imgs/lefty.png";
+import righty from "../imgs/righty.png";
 
 function Serviços() {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -57,10 +59,11 @@ function Serviços() {
 
   return (
     <section className={styles.serviços}>
-      <h1>SERVIÇOS</h1>
       <div className={styles.subtexto}>
         <p>
+          <img src={lefty} />{" "}
           <i>Não construímos sites, criamos experiências que convertem.</i>
+          <img src={righty} />
         </p>
       </div>
 

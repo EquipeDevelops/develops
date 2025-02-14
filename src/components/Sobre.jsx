@@ -47,6 +47,7 @@ function Sobre() {
       <div className={styles.heroImg}>
         <img src={develops} alt="Logo Develops" />
       </div>
+      <div className={styles.triangles}></div>
     </section>
   );
 }

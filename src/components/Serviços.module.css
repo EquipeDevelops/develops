@@ -1,6 +1,6 @@
 .serviços {
   text-align: center;
-  margin-top: 85px;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
 }

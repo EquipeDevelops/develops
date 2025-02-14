@@ -4,7 +4,6 @@ import cris from "../imgs/cristovao.png";
 function Projetos() {
   return (
     <main className={styles.projetos}>
-      <h1>PROJETOS</h1>
       <p>
         Confira alguns exemplos de projetos que desenvolvemos para nossos
         clientes.
