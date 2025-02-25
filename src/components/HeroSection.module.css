@@ -13,97 +13,114 @@
   gap: 2rem;
 }
 
-.rounded {
-  position: absolute;
-  width: 500px;
-  height: 80px;
-  right: 0;
-  margin-bottom: 210px;
-  margin-right: 900px;
-  background-image: url("../imgs/rounded.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -1;
-}
-
 .heroContent {
   flex: 1;
   max-width: 600px;
 }
 
 .upper {
-  font-size: 3.4rem;
+  font-size: 4rem;
   font-weight: 400;
   color: white;
+  position: relative;
+}
+
+.upper::before {
+  content: url("../imgs/rounded.png");
+  position: absolute;
+  z-index: -1;
+  left: -30px;
+  top: -5px;
 }
 
 .lower {
-  font-size: 1.7rem;
-  font-weight: lighter;
+  font-size: 2.3rem;
+  font-weight: 300;
+  max-width: 500px;
   color: white;
-}
-
-.highlight {
-  color: #2bb673;
-}
-
-.lower {
   margin-top: 1rem;
 }
 
-.ctaButtons {
-  margin-top: 2rem;
+.lower svg {
+  color: var(--corPrincipal);
+  font-size: 1.5rem;
 }
 
-.buttonCTA,
-.btn {
-  padding: 0.75rem 1.5rem;
-  margin-right: 1rem;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
+.highlight {
+  color: var(--corPrincipal);
+}
+
+.ctaButtons {
+  margin-top: 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .buttonCTA {
-  background-color: #2bb673;
-  color: #333;
-  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.buttonCTA:hover {
-  background-color: #b3ff00;
+.buttonCTA svg {
+  rotate: -50deg;
+  font-size: 1rem;
 }
 
-.btn {
+.ctaButtons a {
+  background-color: var(--corPrincipal);
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  color: var(--corLetras);
+  text-decoration: none;
+  border: 1px solid var(--corPrincipal);
+  border-radius: 5px;
+  transition: all .2s ease;
+}
+
+.ctaButtons a:nth-child(2) {
   background-color: transparent;
-  border: 2px solid #2bb673;
-  color: #2bb673;
+  color: var(--corPrincipal);
 }
 
-.btn:hover {
-  background-color: greenyellow;
-  color: #333;
+.ctaButtons a:hover {
+  background-color: var(--corPreto);
+  color: var(--corPrincipal);
+  border-color: var(--corPreto);
+  box-shadow: 0px 0px 10px #2bb67369;
 }
 
 .contactInfo {
   margin-top: 1.5rem;
   font-size: 1rem;
   color: white;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+}
+
+.contactInfo li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+} 
+
+.contactInfo svg {
+  background-color: var(--corPreto);
+  font-size: 1.3rem;
+  color: var(--corPrincipal);
+  border-radius: 50%;
+  padding: 2px;
 }
 
 .heroImg {
-  flex-shrink: 0;
 }
 
 .heroImg img {
-  max-width: 30%;
-  height: auto;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  object-fit: contain;
+  width: 100%;
+  max-width: 440px;
 }
 
 @media (max-width: 768px) {

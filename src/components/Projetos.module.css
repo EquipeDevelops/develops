@@ -1,9 +1,9 @@
 .projetos {
-  color: #ffffff;
+  color: var(--corLetras);
   text-align: center;
-  padding: 50px 20px;
-  font-family: Arial, sans-serif;
-  margin-top: 45px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  padding-bottom: 10rem;
 }
 
 .projetos h1 {
@@ -11,51 +11,69 @@
   margin-bottom: 0.5rem;
 }
 
-.projetos p {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  color: #ccc;
-}
-
 .projetocard {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-radius: 8px;
-  padding: 20px;
-
-  margin: 0 auto;
-  max-width: 800px;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 70px;
 }
 
 .textSection {
-  flex: 1;
+  max-width: 400px;
   text-align: left;
-  font-weight: 200;
+  color: var(--corLetras);
+  font-weight: 500;
 }
 
-.textSection h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #00ff00;
+.textSection h2{
+  font-size: 1.05rem;
+  color: var(--corPrincipal);
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-.textSection p {
+.textSection a {
+  cursor: pointer;
   font-size: 1.5rem;
-  color: #ddd;
+  text-decoration: none;
+  color: var(--corLetras);
+}
+
+.textSection a:hover {
+  text-decoration: underline;
+}
+
+.textSection a svg {
+  color: var(--corPrincipal);
+  font-size: 4rem;
+  margin-top: 10px;
+  rotate: 40deg;
 }
 
 .imageSection {
-  flex-shrink: 0;
-  width: 447px;
-  height: 250px;
+  position: relative;
+}
+
+.imageSection::before {
+  position: absolute;
+  content: url("../imgs/detalheProjeto1.svg");
+  top: -25px;
+  right: -25px;
+  z-index: -1;
+}
+
+.imageSection::after {
+  position: absolute;
+  content: url("../imgs/detalheProjeto2.svg");
+  bottom: -25px;
+  left: -25px;
+  z-index: -1;
 }
 
 .imageSection img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-left: 30px;
+  max-width: 600px;
+  border-radius: 10px;
 }
+

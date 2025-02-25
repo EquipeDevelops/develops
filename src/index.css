@@ -7,6 +7,14 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root {
+  --corPrincipal: #2BB673;
+  --corContraste: #126D41;
+  --corFundo: #292929;
+  --corLetras: #F5F5F5;
+  --corPreto: #1E1E1E;
+}
+
 body {
   background-color: #292929;
   margin: auto;

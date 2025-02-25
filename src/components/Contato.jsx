@@ -1,6 +1,7 @@
 import styles from "./Contato.module.css";
-
 import { useState } from "react";
+import { LuInstagram } from "react-icons/lu";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Contato = () => {
   const [formData, setFormData] = useState({
@@ -22,8 +23,8 @@ const Contato = () => {
   return (
     <div className={styles.container}>
       <div className={styles.heroContent}>
-        <h2>O QUE ACHOU?</h2>
         <p className={styles.textUpper}>
+        <h2>O QUE ACHOU?</h2>
           Na <span className={styles.highlight}>Develops</span>, sua ideia se
           torna realidade digital! Seja um site ultrarrápido, um e-commerce de
           alto desempenho ou um sistema personalizado,{" "}
@@ -37,25 +38,11 @@ const Contato = () => {
           solução perfeita para você.
         </p>
         <div className={styles.social}>
-          <p>Redes</p>
-          <div className={styles.icons}>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                alt="LinkedIn"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
-                alt="Instagram"
-              />
-            </a>
-          </div>
+          <h3>Redes</h3>
+          <ul>
+            <li><FaLinkedinIn /></li>
+            <li><LuInstagram /></li>
+          </ul>
         </div>
       </div>
       <div className={styles.formContainer}>

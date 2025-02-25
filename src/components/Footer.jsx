@@ -1,4 +1,7 @@
 import styles from "./Footer.module.css";
+import { FaQuoteRight } from "react-icons/fa";
+import { LuInstagram } from "react-icons/lu";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -14,33 +17,15 @@ const Footer = () => {
         <div className={styles.footerContent}>
           <div className={styles.leftContent}>
             <h3 className={styles.logo}>DEVELOPS</h3>
-            <p className={styles.tagline}>Construindo soluções digitais</p>
+            <p className={styles.tagline}>Construindo soluções digitais <FaQuoteRight /></p>
           </div>
 
           <div className={styles.socialContent}>
             <h3 className={styles.socialTitle}>Social</h3>
-            <div className={styles.icons}>
-              <a
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                  alt="LinkedIn"
-                />
-              </a>
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
-                  alt="Instagram"
-                />
-              </a>
-            </div>
+            <ul className={styles.icons}>
+              <li><FaLinkedinIn /></li>
+              <li><LuInstagram /></li>
+            </ul>
           </div>
         </div>
       </div>

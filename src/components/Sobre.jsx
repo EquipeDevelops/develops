@@ -1,5 +1,6 @@
-import styles from "./Sobre.module.css";
-import develops from "../imgs/develops.png";
+import styles from './Sobre.module.css';
+import develops from '../imgs/develops.png';
+import { IoIosArrowDown } from "react-icons/io";
 
 function Sobre() {
   return (
@@ -14,7 +15,7 @@ function Sobre() {
             design inovador e velocidade incomparável.
           </p>
           <p>
-            Não construímos apenas sites —{" "}
+            Não construímos apenas sites —{' '}
             <span className={styles.highlight}>
               criamos ferramentas estratégicas
             </span>
@@ -24,30 +25,30 @@ function Sobre() {
             facilita a navegação, aumentando o engajamento e a conversão.
           </p>
           <p>
-            Da concepção à entrega, cuidamos de cada detalhe para que você possa
-            focar no que realmente importa: evoluir seu negócio. Seja para
-            fortalecer sua presença online, automatizar processos ou expandir
-            suas vendas, somos o parceiro ideal para transformar sua visão em
-            realidade digital.
+            <span className={styles.highlight}>
+              Da concepção à entrega, cuidamos de cada detalhe para que você
+              possa focar no que realmente importa:
+            </span>{' '}
+            evoluir seu negócio. Seja para fortalecer sua presença online,
+            automatizar processos ou expandir suas vendas, somos o parceiro
+            ideal para transformar sua visão em realidade digital.
           </p>
           <p className={styles.footer}>
             <span className={styles.highlight}>Develops:</span> Tecnologia que
             acelera resultados.
           </p>
-          <p>
-            <strong>Seu próximo passo para o sucesso começa aqui.</strong>
-          </p>
+          <p className={styles.footerP}>Seu próximo passo para o sucesso começa aqui. <IoIosArrowDown /></p>
         </blockquote>
 
         <a href="#" className={styles.ctaButton}>
           Entrar em contato
         </a>
+        <div className={styles.triangles}></div>
       </div>
 
       <div className={styles.heroImg}>
         <img src={develops} alt="Logo Develops" />
       </div>
-      <div className={styles.triangles}></div>
     </section>
   );
 }

@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding: 4rem;
   color: white;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   gap: 4rem;
   margin-top: 40px;
@@ -14,7 +15,7 @@
 .heroContent {
   flex: 1;
   text-align: left;
-  color: #e0e0e0;
+  color: var(--corLetras);
   background-color: #1c1c1c;
   padding: 2rem;
   border-radius: 5px;
@@ -22,14 +23,15 @@
 }
 
 .blockquote {
-  font-style: italic;
-  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.05rem;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .highlight {
-  color: #00ff99;
-  font-weight: bold;
+  color: var(--corPrincipal);
 }
 
 .heroContent p {
@@ -38,27 +40,40 @@
 }
 
 .footer {
-  color: #00ff99;
-  font-weight: bold;
+  color: var(--corPrincipal);
   margin-bottom: 2rem;
+}
+
+.footerP {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  & svg {
+    color: var(--corPrincipal);
+    font-size: 1.2rem;
+  }
 }
 
 .ctaButton {
   display: inline-block;
   padding: 1rem 2rem;
-  background-color: #00ff99;
-  color: #1c1c1c;
+  background-color: var(--corPrincipal);
+  color: var(--corLetras);
   border-radius: 5px;
-  font-weight: bold;
+  font-size: 1.1rem;
   text-decoration: none;
+  transition: all .2s ease;
 }
 
 .ctaButton:hover {
-  background-color: #00e68a;
+  background-color: var(--corPreto);
+  color: var(--corPrincipal);
+  box-shadow: 0px 0px 10px var(--corPrincipal);
 }
 
 .heroImg img {
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
   object-fit: contain;
 }
@@ -70,13 +85,15 @@
 }
 
 .triangles {
-  position: absolute;
-  width: 100%;
-  height: 670px;
-
-  background-image: url("../imgs/triangles.png");
-  background-size: contain;
+  width: 50vw;
+  height: 400px;
+  background-image: url("../imgs/triangles2.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+  position: absolute;
   z-index: -1;
+  bottom: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  rotate: 180deg;
 }

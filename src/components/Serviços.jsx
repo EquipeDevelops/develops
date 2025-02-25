@@ -2,6 +2,13 @@ import { useState } from "react";
 import styles from "./Serviços.module.css";
 import lefty from "../imgs/lefty.png";
 import righty from "../imgs/righty.png";
+import { FaEarthAmericas } from "react-icons/fa6";
+import { HiBuildingStorefront } from "react-icons/hi2";
+import { CgProfile } from "react-icons/cg";
+import { IoSettingsOutline } from "react-icons/io5";
+import { MdDevices } from "react-icons/md";
+import { HiOutlineShoppingCart } from "react-icons/hi";
+
 
 function Serviços() {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -10,6 +17,7 @@ function Serviços() {
     {
       title: "Landing Pages",
       features: ["Mobile First", "Integração com APIs", "SEO Otimizado"],
+      icon: <FaEarthAmericas />
     },
     {
       title: "Sites Institucionais",
@@ -18,6 +26,7 @@ function Serviços() {
         "Formulário de contato integrado",
         "SEO básico incluído",
       ],
+      icon: <HiBuildingStorefront />
     },
     {
       title: "Portfólios Digitais",
@@ -26,6 +35,7 @@ function Serviços() {
         "Integração com redes sociais",
         "Download de currículo",
       ],
+      icon: <CgProfile />
     },
     {
       title: "Manutenção",
@@ -34,6 +44,7 @@ function Serviços() {
         "Backup diário",
         "Monitoramento de performance",
       ],
+      icon: <IoSettingsOutline />
     },
     {
       title: "Design Responsivo",
@@ -42,6 +53,7 @@ function Serviços() {
         "Layouts flexíveis",
         "Testes em múltiplos dispositivos",
       ],
+      icon: <MdDevices />
     },
     {
       title: "E-commerce",
@@ -50,6 +62,7 @@ function Serviços() {
         "Carrinho de compras",
         "Gateway de pagamento",
       ],
+      icon: <HiOutlineShoppingCart />
     },
   ];
 
@@ -76,7 +89,7 @@ function Serviços() {
             }`}
             onClick={() => handleCardClick(index)}
           >
-            <h2>{card.title}</h2>
+            <h2>{card.title} {card.icon}</h2>
             <ul>
               {card.features.map((feature, i) => (
                 <li key={i}>{feature}</li>

@@ -10,44 +10,57 @@
 
 /* Caixa de contato verde, que se projeta para cima do footer */
 .contactBox {
-  background-color: #29c76f;
-  padding: 1.5rem;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--corPrincipal);
+  padding: 25px 40px;
+  font-weight: 400;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 5px;
   margin: 0 auto;
-  max-width: 800px;
+  width: 100%;
+  max-width: 900px;
   position: absolute;
   top: -50px; /* Faz o componente se projetar acima do footer */
   left: 50%;
   transform: translateX(-50%);
   z-index: 1; /* Garante que ele apareça por cima do footer */
+  box-shadow: 0px 0px 10px #2bb6739d;
 }
 
 .contactText {
-  font-size: 1.25rem;
-  margin-right: 1rem;
+  font-size: 1.15rem;
 }
 
 .contactButton {
-  padding: 0.5rem 1.5rem;
-  background-color: #fff;
-  color: #29c76f;
-  border: none;
-  border-radius: 4px;
+  padding: 10px 20px;
+  background-color: var(--corLetras);
+  color: var(--corContraste);
+  font-size: 1.05rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
   cursor: pointer;
+  transition: all .2s ease;
+}
+
+.contactButton:hover {
+  background-color: var(--corPreto);
+  color: var(--corLetras);
 }
 
 /* Footer principal */
 .footer {
-  background-color: #1e1e1e;
-  padding-top: 5rem; /* Compensa o espaço do contactBox */
+  background-color: var(--corPreto);
+  padding: 5rem 3rem;
 }
 
 .footerContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -58,45 +71,60 @@
 }
 
 .logo {
-  color: #29c76f;
+  color: var(--corPrincipal);
+  margin-bottom: 5px;
 }
 
 .tagline {
-  margin-top: 0.5rem;
+  font-style: italic;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tagline svg {
+  color: var(--corFundo);
+  font-size: 1.1rem;
 }
 
 /* Coluna direita - Social */
-.socialContent {
-  text-align: right;
-}
 
 .socialTitle {
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
+  color: var(--corPrincipal);
 }
 
-.socialIcons {
+.socialContent ul{
   display: flex;
-  gap: 1rem;
-  justify-content: flex-end;
+  gap: 10px;
+  list-style: none;
 }
 
-.socialIcons a {
-  color: #fff;
+.socialContent ul li {
+  width: 35px;
+  height: 35px;
+  background-color: var(--corFundo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
+  border-radius: 5px;
 }
 
 /* Copyright */
 .copyright {
   text-align: center;
   margin-top: 2rem;
-  font-size: 0.875rem;
-  border-top: 1px solid #333;
-  padding-top: 1rem;
+  font-size: .8rem;
+  color: var(--corLetras);
+  font-weight: 300;
+  padding-top: 2rem;
 }
 
 .developsLink {
-  color: #29c76f;
-  text-decoration: none;
+  color: var(--corPrincipal);
+  text-decoration: underline;
 }
 
 .developsLink:hover {
