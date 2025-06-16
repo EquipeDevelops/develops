@@ -1,9 +1,11 @@
 import styles from "./Contato.module.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { LuInstagram } from "react-icons/lu";
 import { FaLinkedinIn } from "react-icons/fa";
 
 const Contato = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({
     nome: "",
     email: "",
@@ -16,15 +18,37 @@ const Contato = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
-    alert("Email enviado com sucesso!");
+
+    const serviceID = "service_grsorss";
+    const templateID = "template_lw3ecp6";
+    const publicKey = "plq6NWc52FMx7mYUF";
+
+    emailjs
+      .sendForm(serviceID, templateID, form.current, {
+        publicKey: publicKey,
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          alert("Email enviado com sucesso!");
+          setFormData({
+            nome: "",
+            email: "",
+            mensagem: "",
+          });
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          alert("Ocorreu um erro ao enviar o email. Tente novamente.");
+        }
+      );
   };
 
   return (
     <div className={styles.container}>
       <div className={styles.heroContent}>
         <p className={styles.textUpper}>
-        <h2>O QUE ACHOU?</h2>
+          <h2>O QUE ACHOU?</h2>
           Na <span className={styles.highlight}>Develops</span>, sua ideia se
           torna realidade digital! Seja um site ultrarrápido, um e-commerce de
           alto desempenho ou um sistema personalizado,{" "}
@@ -40,13 +64,29 @@ const Contato = () => {
         <div className={styles.social}>
           <h3>Redes</h3>
           <ul>
-            <li><FaLinkedinIn /></li>
-            <li><LuInstagram /></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/developsbr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/equipedevelops/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LuInstagram />
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <div className={styles.formContainer}>
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={handleSubmit}>
           <label htmlFor="nome">Nome:</label>
           <input
             type="text"

@@ -6,15 +6,15 @@ function NavMenu() {
     <div className={styles.navmenu}>
       <div className={styles.navLinksEsquerda}>
         <a href="#">Inicio</a>
-        <a href="#">Serviços</a>
-        <a href="#">Projetos</a>
+        <a href="#serviços">Serviços</a>
+        <a href="#projetos">Projetos</a>
       </div>
       <div className={styles.navLogo}>
         <img src={logo} />
       </div>
       <div className={styles.navLinksDireita}>
-        <a href="#">Contato</a>
-        <a href="#">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="#sobre">Sobre</a>
         <a href="#">Depoimentos</a>
       </div>
     </div>

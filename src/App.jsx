@@ -14,26 +14,26 @@ function App() {
       <NavMenu />
       <HeroSection />
       <div className="line"></div>
-      <h1 className="services">
+      <h1 id="serviços" className="services">
         <img src={leftwing} />
         SERVIÇOS
         <img src={rightwing} />
       </h1>
       <Serviços />
-      <h1 className="title">
+      <h1 id="projetos" className="title">
         <img src={leftwing} />
         PROJETOS
         <img src={rightwing} />
       </h1>
       <Projetos />
-      <h1 className="title">
+      <h1 id="sobre" className="title">
         <img src={leftwing} />
         SOBRE
         <img src={rightwing} />
       </h1>
       <div className="vertical"></div>
       <Sobre />
-      <h1 className="title">
+      <h1 id="contato" className="title">
         <img src={leftwing} />
         CONTATO
         <img src={rightwing} />

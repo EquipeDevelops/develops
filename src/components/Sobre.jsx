@@ -1,5 +1,5 @@
-import styles from './Sobre.module.css';
-import develops from '../imgs/develops.png';
+import styles from "./Sobre.module.css";
+import develops from "../imgs/develops.png";
 import { IoIosArrowDown } from "react-icons/io";
 
 function Sobre() {
@@ -15,7 +15,7 @@ function Sobre() {
             design inovador e velocidade incomparável.
           </p>
           <p>
-            Não construímos apenas sites —{' '}
+            Não construímos apenas sites —{" "}
             <span className={styles.highlight}>
               criamos ferramentas estratégicas
             </span>
@@ -28,7 +28,7 @@ function Sobre() {
             <span className={styles.highlight}>
               Da concepção à entrega, cuidamos de cada detalhe para que você
               possa focar no que realmente importa:
-            </span>{' '}
+            </span>{" "}
             evoluir seu negócio. Seja para fortalecer sua presença online,
             automatizar processos ou expandir suas vendas, somos o parceiro
             ideal para transformar sua visão em realidade digital.
@@ -37,10 +37,12 @@ function Sobre() {
             <span className={styles.highlight}>Develops:</span> Tecnologia que
             acelera resultados.
           </p>
-          <p className={styles.footerP}>Seu próximo passo para o sucesso começa aqui. <IoIosArrowDown /></p>
+          <p className={styles.footerP}>
+            Seu próximo passo para o sucesso começa aqui. <IoIosArrowDown />
+          </p>
         </blockquote>
 
-        <a href="#" className={styles.ctaButton}>
+        <a href="#contato" className={styles.ctaButton}>
           Entrar em contato
         </a>
         <div className={styles.triangles}></div>

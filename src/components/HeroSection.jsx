@@ -5,7 +5,6 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 
-
 function HeroSection() {
   return (
     <section className={styles.hero}>
@@ -14,20 +13,29 @@ function HeroSection() {
           SOMOS <span className={styles.highlight}>DEVELOPS</span>
         </h1>
 
-        <h2 className={styles.lower}>CONSTRUINDO SOLUÇÕES DIGITAIS <FaQuoteRight /></h2>
+        <h2 className={styles.lower}>
+          CONSTRUINDO SOLUÇÕES DIGITAIS <FaQuoteRight />
+        </h2>
 
         <div className={styles.ctaButtons}>
-          <a href="#" className={styles.buttonCTA}>
+          <a href="#contato" className={styles.buttonCTA}>
             Entre em contato
             <FaArrowRightLong />
           </a>
-          <a href="#" className={styles.btn}>
+          <a
+            href="https://www.linkedin.com/company/developsbr"
+            className={styles.btn}
+          >
             Ver mais
           </a>
         </div>
         <ul className={styles.contactInfo}>
-           <li><IoIosCall /> (82) 9 9999-9999</li>
-           <li><MdEmail /> contato@develops.com</li>
+          <li>
+            <IoIosCall /> +55 82 9986-8803
+          </li>
+          <li>
+            <MdEmail /> equipedevelops@gmail.com
+          </li>
         </ul>
       </div>
       <div className={styles.heroImg}>

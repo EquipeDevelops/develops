@@ -10,21 +10,34 @@ const Footer = () => {
         <span className={styles.contactText}>
           Se ficou interessado em nossos serviços, que tal nos contatar?
         </span>
-        <button className={styles.contactButton}>Entrar em contato</button>
       </div>
 
       <div className={styles.footer}>
         <div className={styles.footerContent}>
           <div className={styles.leftContent}>
             <h3 className={styles.logo}>DEVELOPS</h3>
-            <p className={styles.tagline}>Construindo soluções digitais <FaQuoteRight /></p>
+            <p className={styles.tagline}>
+              Construindo soluções digitais <FaQuoteRight />
+            </p>
           </div>
 
           <div className={styles.socialContent}>
             <h3 className={styles.socialTitle}>Social</h3>
             <ul className={styles.icons}>
-              <li><FaLinkedinIn /></li>
-              <li><LuInstagram /></li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/developsbr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/equipedevelops/">
+                  <LuInstagram />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -34,7 +47,6 @@ const Footer = () => {
         <p>
           ©Copyright 2025, todos os direitos reservados. Feito por
           <a href="#" className={styles.developsLink}>
-            {" "}
             Develops
           </a>
         </p>

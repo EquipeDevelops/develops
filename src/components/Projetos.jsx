@@ -12,7 +12,10 @@ function Projetos() {
       <div className={styles.projetocard}>
         <div className={styles.textSection}>
           <h2>Portfólio de advocacia</h2>
-          <a href="#">Um portfólio que desenvolvemos para um escritório de advocacia <IoIosArrowRoundUp /></a>
+          <a href="https://www.cristovaobritoadvocacia.com">
+            Um portfólio que desenvolvemos para um escritório de advocacia{" "}
+            <IoIosArrowRoundUp />
+          </a>
         </div>
         <div className={styles.imageSection}>
           <img src={cris} alt="Foto do portfólio de advocacia" />
